@@ -8,10 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-
-          <Route path="404" element={<NotFound />} />
-          <Route path="*" element={<Navigate to={'404'} />} />
+          <Route path="/:name" element={<Index />} />
         </Routes>
       </BrowserRouter>
     </>
